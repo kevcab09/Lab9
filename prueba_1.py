@@ -9,7 +9,7 @@ driver.maximize_window()
 driver.delete_all_cookies()
 driver.get("https://www.amazon.com/")
 
-#Busca la barra de busqueda, ingres el texto "HP Pavilon azul", y le da submit.
+#Busca la barra de busqueda, ingresa el texto "HP Pavilon azul", y le da submit.
 Busqueda = WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.ID, "twotabsearchtextbox")))
 time.sleep(5)
 TextoBusqueda = ("HP Pavilon azul")
